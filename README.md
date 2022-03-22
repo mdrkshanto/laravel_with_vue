@@ -12,12 +12,29 @@ laravel new 'Project Name'
 ````
 ****
 
-##### Install Packages
 
-***Laravel Auth Packages***
+
+<p>
+##### Install Packages
+#### Laravel Auth Packages
+***Breeze Package***
+<code>composer require laravel/breeze --dev</code>
 ````js
-composer require laravel/breeze --dev
 php artisan breeze:install
+````
+
+***Sanctum Package***
+````js
 composer require laravel/sanctum
+````
+````js
 php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 ````
+
+***Configure Sanctum Package***
+````js
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+````
+</p>
+
+
