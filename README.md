@@ -10,3 +10,4 @@ composer global require laravel/installer
 ````npm
 laravel new 'Project Name'
 ````
+**
