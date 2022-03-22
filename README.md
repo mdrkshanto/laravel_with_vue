@@ -18,7 +18,6 @@ laravel new 'Project Name'
 
 <h3>Install Packages</h3>
 <h4>Laravel Auth Packages</h4>
-<p>
 <h6>Breeze Package</h6>
 <ol>
 <li>
@@ -39,8 +38,6 @@ php artisan breeze:install
 
 #
 
-</p>
-<p>
 <h6>Sanctum Package</h6>
 
 <ol>
@@ -60,6 +57,8 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 </li>
 </ol>
 <h6>Sanctum Configuration</h6>
+<p>Add in <code>app/Http/Kernel.php</code> File.</p>
+
 
 ```php
 'api' => [
@@ -68,5 +67,3 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
     \Illuminate\Routing\Middleware\SubstituteBindings::class,
 ],
 ```
-
-</p>
