@@ -4,7 +4,6 @@
 ***Install Laravel Globally:***
 
 ```composer
-composer global require laravel/installer
-```
+composer global require laravel/installer```
 
 *Create Project*
