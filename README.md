@@ -20,7 +20,7 @@ laravel new 'Project Name'
 <p>
 <h3>Install Packages</h3>
 <h4>Laravel Auth Packages</h4>
-<p style="border:1px solid gray">
+<p style="border:1rem solid gray">
 <h6>Breeze Package</h6>
 <ol>
 <li>
