@@ -40,19 +40,23 @@ php artisan breeze:install
 #
 
 </p>
+<p>
+<h6>Sanctum Package</h6>
 
-**_Sanctum Package_**
+<ol>
+<li>
 
 ```js
 composer require laravel/sanctum
 ```
 
-```js
-php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
-```
-
-**_Configure Sanctum Package_**
+</li>
+<li>
 
 ```js
 php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 ```
+
+</li>
+</ol>
+</p>
