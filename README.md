@@ -7,7 +7,7 @@ composer global require laravel/installer
 ```
 
 *Create Project:*
-````npm
+````js
 laravel new 'Project Name'
 ````
 ****
@@ -15,7 +15,7 @@ laravel new 'Project Name'
 ##### Install Packages
 
 ***Laravel Auth Packages***
-````css
+````js
 composer require laravel/breeze --dev
 php artisan breeze:install
 composer require laravel/sanctum
