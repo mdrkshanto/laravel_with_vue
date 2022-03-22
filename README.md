@@ -15,13 +15,19 @@ laravel new 'Project Name'
 
 
 <p>
-
 <h3>Install Packages</h3>
 <h4>Laravel Auth Packages</h4>
+<h6>Breeze Package</h6>
+<ul>
+<li>
 
-<h6>Sanctum Package</h6>
+````js
+composer require laravel/breeze --dev
+````
+</li>
+</ul>
 
-- ````composer require laravel/breeze --dev````
+- 
 - ````php artisan breeze:install````
 
 ***Sanctum Package***
