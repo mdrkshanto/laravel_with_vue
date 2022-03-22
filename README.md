@@ -1,2 +1,4 @@
 # Laravel With Vue
-### Configaration Details of Laravel with Vue
+### Configuration Details of Laravel with Vue
+
+*Install Laravel Globally*
