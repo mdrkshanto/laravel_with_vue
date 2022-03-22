@@ -31,7 +31,7 @@ composer require laravel/breeze --dev
 php artisan breeze:install
 ````
 </li>
-</ul>
+</ol>
 
 ***Sanctum Package***
 ````js
