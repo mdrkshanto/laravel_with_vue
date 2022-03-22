@@ -57,7 +57,7 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 </li>
 </ol>
 <h6>Sanctum Configuration</h6>
-<p>Add in <code>app/Http/Kernel.php</code> File.</p>
+<p>Add in <code>app/Http/Kernel.php</code> file.</p>
 
 
 ```php
