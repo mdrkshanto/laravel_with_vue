@@ -6,4 +6,7 @@
 composer global require laravel/installer
 ```
 
-*Create Project*
+*Create Project:*
+``npm
+laravel new 'Project Name'
+``
