@@ -25,10 +25,13 @@ laravel new 'Project Name'
 composer require laravel/breeze --dev
 ````
 </li>
-</ul>
+<li>
 
-- 
-- ````php artisan breeze:install````
+````js
+php artisan breeze:install
+````
+</li>
+</ul>
 
 ***Sanctum Package***
 ````js
