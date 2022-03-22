@@ -2,7 +2,7 @@
 ### Configuration Details of Laravel with Vue
 
 ***Install Laravel Globally:***
-```npm
+```js
 composer global require laravel/installer
 ```
 
