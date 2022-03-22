@@ -37,7 +37,8 @@ php artisan breeze:install
 </li>
 </ol>
 </p>
-<hr/>
+
+#
 
 **_Sanctum Package_**
 
