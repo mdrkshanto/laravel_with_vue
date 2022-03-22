@@ -16,11 +16,9 @@ laravel new 'Project Name'
 
 ---
 
-<p>
-<p>
 <h3>Install Packages</h3>
 <h4>Laravel Auth Packages</h4>
-<p style="border:1rem solid gray">
+<p>
 <h6>Breeze Package</h6>
 <ol>
 <li>
@@ -39,7 +37,6 @@ php artisan breeze:install
 </li>
 </ol>
 </p>
-</p>
 <hr/>
 
 **_Sanctum Package_**
@@ -57,5 +54,3 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 ```js
 php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 ```
-
-</p>
