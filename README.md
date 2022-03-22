@@ -18,7 +18,9 @@ laravel new 'Project Name'
 
 ##### Install Packages
 #### Laravel Auth Packages
--[Breeze Package]<code>composer require laravel/breeze --dev</code>
+
+-[composer require laravel/breeze --dev]
+
 ````js
 php artisan breeze:install
 ````
