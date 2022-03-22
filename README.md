@@ -18,7 +18,7 @@ laravel new 'Project Name'
 <h3>Install Packages</h3>
 <h4>Laravel Auth Packages</h4>
 <h6>Breeze Package</h6>
-<ul>
+<ol>
 <li>
 
 ````js
