@@ -59,4 +59,12 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 
 </li>
 </ol>
+
+***Sanctum Configuration***
+```php
+'api' => [
+    \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+],
+```
+
 </p>
