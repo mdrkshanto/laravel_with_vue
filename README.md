@@ -67,3 +67,10 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
     \Illuminate\Routing\Middleware\SubstituteBindings::class,
 ],
 ```
+
+<hr/>
+<h2>Installing Dependency Packages with npm</h2>
+
+```js
+npm i jquery jquery-ui animate.css bootstrap bootstrap-icons vue vue-loader vue-router vuex vform vue-meta dotenv && npm i && npm run dev
+```
