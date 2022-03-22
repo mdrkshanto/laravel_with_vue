@@ -7,4 +7,4 @@ composer global require laravel/installer
 ```
 
 *Create Project*
-***
+*
