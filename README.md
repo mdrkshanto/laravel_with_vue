@@ -19,13 +19,8 @@ laravel new 'Project Name'
 ##### Install Packages
 #### Laravel Auth Packages
 
-````js
-- composer require laravel/breeze --dev
-````
-
-````js
-php artisan breeze:install
-````
+- ````composer require laravel/breeze --dev````
+- ````php artisan breeze:install````
 
 ***Sanctum Package***
 ````js
