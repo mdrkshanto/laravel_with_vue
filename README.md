@@ -1,18 +1,20 @@
 # Laravel With Vue
+
 ### Configuration Details of Laravel with Vue
 
-***Install Laravel Globally:***
-`````js
+**_Install Laravel Globally:_**
+
+```js
 composer global require laravel/installer
-`````
+```
 
-*Create Project:*
-````js
+_Create Project:_
+
+```js
 laravel new 'Project Name'
-````
-****
+```
 
-
+---
 
 <p>
 <p>
@@ -22,32 +24,36 @@ laravel new 'Project Name'
 <ol>
 <li>
 
-````js
+```js
 composer require laravel/breeze --dev
-````
+```
+
 </li>
 <li>
 
-````js
+```cs
 php artisan breeze:install
-````
+```
+
 </li>
 </ol>
 </p>
 <hr/>
 
-***Sanctum Package***
-````js
+**_Sanctum Package_**
+
+```js
 composer require laravel/sanctum
-````
-````js
-php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
-````
+```
 
-***Configure Sanctum Package***
-````js
+```js
 php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
-````
+```
+
+**_Configure Sanctum Package_**
+
+```js
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+```
+
 </p>
-
-
