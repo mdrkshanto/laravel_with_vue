@@ -1,7 +1,6 @@
-<header>
-    <font size="30">Laravel With Vue</font><br>
-    <span>Configuration Details of Laravel with Vue</span>
-</header><br><br>
+# Laravel With Vue
+
+### Configuration Details of Laravel with Vue
 
 **_Install Laravel Globally:_**
 
@@ -59,6 +58,7 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 </ol>
 <h6>Sanctum Configuration</h6>
 <p>Add in <code>app/Http/Kernel.php</code> file.</p>
+
 
 ```php
 'api' => [
