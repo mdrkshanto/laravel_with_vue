@@ -1,6 +1,19 @@
 <style>
-    @import "style.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none !important;
+}
+header{        
+    margin-bottom: 3rem;
+}
+header h1{
+    font-weight: bolder;
+    font-size: 3rem;
+}
 </style>
+
 <header>
     <h1>Laravel With Vue</h1>
     <span>Configuration Details of Laravel with Vue</span>
@@ -62,7 +75,6 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 </ol>
 <h6>Sanctum Configuration</h6>
 <p>Add in <code>app/Http/Kernel.php</code> file.</p>
-
 
 ```php
 'api' => [
