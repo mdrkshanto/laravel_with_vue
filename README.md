@@ -74,3 +74,18 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 ```js
 npm i jquery jquery-ui animate.css bootstrap bootstrap-icons vue vue-loader vue-router vuex vform vue-meta dotenv && npm i && npm run dev
 ```
+
+<hr/>
+
+<h2>Configurations:</h2>
+
+<h5>Webpack Configure</h5>
+<span>Add in <code>webpack.mix.js</code></span>
+
+```js
+const mix = require('laravel-mix');
+
+mix.js('resources/js/app.js', 'public/js').vue().postCss('resources/css/app.css', 'public/css');
+```
+
+
