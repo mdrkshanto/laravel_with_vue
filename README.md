@@ -1,5 +1,5 @@
 <header>
-    <b>Laravel With Vue</b><br>
+    <font color="red">Laravel With Vue</font><br>
     <span>Configuration Details of Laravel with Vue</span>
 </header><br><br>
 
