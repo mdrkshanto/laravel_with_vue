@@ -161,7 +161,5 @@ app.mount('#app')
 ```css
 @import "bootstrap";
 @import "bootstrap-icons";
-@import url("https://kit-pro.fontawesome.com/releases/v6.0.0/css/pro.min.css");
 @import 'animate.css';
-@import '../../public/assets/main.css';
 ```
