@@ -1,17 +1,5 @@
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    header{        
-        margin-bottom: 3rem;
-    }
-    header h1{
-        border-bottom: none;
-        font-weight: bolder;
-        font-size: 3rem;
-    }
+    @import "style.css";
 </style>
 <header>
     <h1>Laravel With Vue</h1>
