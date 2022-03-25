@@ -1,4 +1,5 @@
 <style>
+
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@ header h1{
     font-weight: bolder;
     font-size: 3rem;
 }
+
 </style>
 
 <header>
