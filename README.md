@@ -16,7 +16,7 @@ header h1{
 
 </style>
 
-<header>
+<header style="border:none;">
     <h1>Laravel With Vue</h1>
     <span>Configuration Details of Laravel with Vue</span>
 </header>
