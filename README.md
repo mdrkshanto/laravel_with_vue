@@ -92,78 +92,79 @@ mix.js('resources/js/app.js', 'public/js').vue().postCss('resources/css/app.css'
 
 <ol>
 <li>
-    <span>Add in <code>resources\js\bootstrap.js</code></span>
+<span>Add in <code>resources\js\bootstrap.js</code></span>
 
-    ```js
-    window._ = require('lodash');
+```js
+window._ = require('lodash');
 
-    try {
-        window.$ = window.jquery = window.jQuery = require("jquery")
-        window.bs5 = require("bootstrap/dist/js/bootstrap.bundle.min")
-        window.Vue = require('vue')
-        window.Vuex = require('vuex')
-        window.VueRouter = require('vue-router')
-        window.VueMeta = require('vue-meta')
-    } catch (error) { }
-    import Form from "vform";
-    window.Form = Form;
-    window.axios = require('axios');
+try {
+    window.$ = window.jquery = window.jQuery = require("jquery")
+    window.bs5 = require("bootstrap/dist/js/bootstrap.bundle.min")
+    window.Vue = require('vue')
+    window.Vuex = require('vuex')
+    window.VueRouter = require('vue-router')
+    window.VueMeta = require('vue-meta')
+} catch (error) { }
+import Form from "vform";
+window.Form = Form;
+window.axios = require('axios');
 
-    window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-    /**
-     * Echo exposes an expressive API for subscribing to channels and listening
-     * for events that are broadcast by Laravel. Echo and event broadcasting
-     * allows your team to easily build robust real-time web applications.
-     */
+/**
+ * Echo exposes an expressive API for subscribing to channels and listening
+ * for events that are broadcast by Laravel. Echo and event broadcasting
+ * allows your team to easily build robust real-time web applications.
+ */
 
-    // import Echo from 'laravel-echo';
+// import Echo from 'laravel-echo';
 
-    // window.Pusher = require('pusher-js');
+// window.Pusher = require('pusher-js');
 
-    // window.Echo = new Echo({
-    //     broadcaster: 'pusher',
-    //     key: process.env.MIX_PUSHER_APP_KEY,
-    //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
-    //     forceTLS: true
-    // });
-    ```
+// window.Echo = new Echo({
+//     broadcaster: 'pusher',
+//     key: process.env.MIX_PUSHER_APP_KEY,
+//     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
+//     forceTLS: true
+// });
+```
 </li>
 
 <li>
-    <span>Add in <code>resources\js\app.js</code></span>
+<span>Add in <code>resources\js\app.js</code></span>
 
-    ```js
-    require('./bootstrap');
+```js
+require('./bootstrap');
 
-    import storeData from './storeData';
+import storeData from './storeData';
 
-    const store = Vuex.createStore(storeData)
-
-
-
-    import { routes } from './routes';
-
-    const router = VueRouter.createRouter({
-        history: VueRouter.createWebHistory(),
-        routes
-    });
-
-    router.beforeEach((to, from, next) => {
-        document.title = "Shanto" + " | " + to.meta.title;
-        next();
-    });
+const store = Vuex.createStore(storeData)
 
 
 
-    const app = Vue.createApp({})
+import { routes } from './routes';
+
+const router = VueRouter.createRouter({
+    history: VueRouter.createWebHistory(),
+    routes
+});
+
+router.beforeEach((to, from, next) => {
+    document.title = "Shanto" + " | " + to.meta.title;
+    next();
+});
 
 
 
-    app.component('Admin', require('../components/backEnd/master/index').default)
-    app.use(store)
-    app.use(router)
-    app.mount('#app')
-    ```
+const app = Vue.createApp({})
+
+
+
+app.component('Admin', require('../components/backEnd/master/index').default)
+app.use(store)
+app.use(router)
+app.mount('#app')
+```
 </li>
 </ol>
+
