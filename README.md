@@ -1,25 +1,7 @@
-<style>
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none !important;
-}
-header{        
-    margin-bottom: 3rem;
-}
-header h1{
-    font-weight: bolder;
-    font-size: 3rem;
-}
-
-</style>
-
-<header style="border:none;">
-    <h1  style="border:none;">Laravel With Vue</h1>
+<header>
+    <b>Laravel With Vue</b><br>
     <span>Configuration Details of Laravel with Vue</span>
-</header>
+</header><br><br>
 
 **_Install Laravel Globally:_**
 
