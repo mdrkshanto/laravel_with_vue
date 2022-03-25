@@ -89,6 +89,9 @@ mix.js('resources/js/app.js', 'public/js').vue().postCss('resources/css/app.css'
 ```
 
 <h5>js Configure</h5>
+
+<ol>
+<li>
 <span>Add in <code>resources\js\bootstrap.js</code></span>
 
 ```js
@@ -125,5 +128,41 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     forceTLS: true
 // });
 ```
+</li>
+<li>
+<span>Add in <code>resources\js\app.js</code></span>
+
+```js
+require('./bootstrap');
+
+import storeData from './storeData';
+
+const store = Vuex.createStore(storeData)
 
 
+
+import { routes } from './routes';
+
+const router = VueRouter.createRouter({
+    history: VueRouter.createWebHistory(),
+    routes
+});
+
+router.beforeEach((to, from, next) => {
+    document.title = "Shanto" + " | " + to.meta.title;
+    next();
+});
+
+
+
+const app = Vue.createApp({})
+
+
+
+app.component('Admin', require('../components/backEnd/master/index').default)
+app.use(store)
+app.use(router)
+app.mount('#app')
+```
+</li>
+</ol>
