@@ -168,3 +168,5 @@ app.mount("#app");
 ```
 
 <h3>Laravel Image Intervention Package</h3>
+
+#
