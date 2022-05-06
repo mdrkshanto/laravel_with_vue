@@ -181,3 +181,19 @@ composer.phar require intervention/image
 
 <p>After you have installed Intervention Image, open your Laravel config file <code>config/app.php</code> and add the following lines.</p>
 <p>In the <code>$providers</code> array add the service providers for this package.</p>
+
+```php
+Intervention\Image\ImageServiceProvider::class,
+```
+
+<p>Add the facade of this package to the <code>$aliases</code> array.</p>
+
+```php
+'Image' => Intervention\Image\Facades\Image::class,
+```
+
+<h5>Publish configuration in Laravel:</h5>
+
+```php
+php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
+```
