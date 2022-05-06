@@ -167,6 +167,8 @@ app.mount("#app");
 @import "animate.css";
 ```
 
+<hr>
+
 <h3>Laravel Image Intervention Package</h3>
 
 #
