@@ -194,6 +194,6 @@ Intervention\Image\ImageServiceProvider::class,
 
 <h5>Publish configuration in Laravel:</h5>
 
-```php
+```js
 php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
 ```
