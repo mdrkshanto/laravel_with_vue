@@ -176,3 +176,7 @@ app.mount("#app");
 ```js
 composer.phar require intervention/image
 ```
+
+<h5>Configurations:</h5>
+
+<p>Add to <code>config/app.php</code>.</p>
