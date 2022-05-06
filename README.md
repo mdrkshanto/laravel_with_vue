@@ -59,7 +59,6 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 <h6>Sanctum Configuration</h6>
 <p>Add in <code>app/Http/Kernel.php</code> file.</p>
 
-
 ```php
 'api' => [
     \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
@@ -83,9 +82,12 @@ npm i jquery jquery-ui animate.css bootstrap bootstrap-icons vue vue-loader vue-
 <span>Add in <code>webpack.mix.js</code></span>
 
 ```js
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
-mix.js('resources/js/app.js', 'public/js').vue().postCss('resources/css/app.css', 'public/css');
+mix
+  .js("resources/js/app.js", "public/js")
+  .vue()
+  .postCss("resources/css/app.css", "public/css");
 ```
 
 <h5>js Configure</h5>
@@ -95,21 +97,21 @@ mix.js('resources/js/app.js', 'public/js').vue().postCss('resources/css/app.css'
 <span>Add in <code>resources\js\bootstrap.js</code></span>
 
 ```js
-window._ = require('lodash');
+window._ = require("lodash");
 
 try {
-    window.$ = window.jquery = window.jQuery = require("jquery")
-    window.bs5 = require("bootstrap/dist/js/bootstrap.bundle.min")
-    window.Vue = require('vue')
-    window.Vuex = require('vuex')
-    window.VueRouter = require('vue-router')
-    window.VueMeta = require('vue-meta')
-} catch (error) { }
+  window.$ = window.jquery = window.jQuery = require("jquery");
+  window.bs5 = require("bootstrap/dist/js/bootstrap.bundle.min");
+  window.Vue = require("vue");
+  window.Vuex = require("vuex");
+  window.VueRouter = require("vue-router");
+  window.VueMeta = require("vue-meta");
+} catch (error) {}
 import Form from "vform";
 window.Form = Form;
-window.axios = require('axios');
+window.axios = require("axios");
 
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
@@ -128,38 +130,41 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     forceTLS: true
 // });
 ```
+
 </li>
 
 <li>
 <span>Add in <code>resources\js\app.js</code></span>
 
 ```js
-require('./bootstrap');
-import storeData from './storeData';
-const store = Vuex.createStore(storeData)
-import { routes } from './routes';
+require("./bootstrap");
+import storeData from "./storeData";
+const store = Vuex.createStore(storeData);
+import { routes } from "./routes";
 const router = VueRouter.createRouter({
-    history: VueRouter.createWebHistory(),
-    routes
+  history: VueRouter.createWebHistory(),
+  routes,
 });
 router.beforeEach((to, from, next) => {
-    document.title = "Shanto" + " | " + to.meta.title;
-    next();
+  document.title = "Shanto" + " | " + to.meta.title;
+  next();
 });
-const app = Vue.createApp({})
-app.component('Admin', require('../components/backEnd/master/index').default)
-app.use(store)
-app.use(router)
-app.mount('#app')
+const app = Vue.createApp({});
+app.component("Admin", require("../components/backEnd/master/index").default);
+app.use(store);
+app.use(router);
+app.mount("#app");
 ```
+
 </li>
 </ol>
-
 
 <h5>CSS Configure</h5>
 
 ```css
 @import "bootstrap";
 @import "bootstrap-icons";
-@import 'animate.css';
+@import "animate.css";
 ```
+
+<h3>Laravel Image Intervention Package</h3>
