@@ -170,3 +170,9 @@ app.mount("#app");
 <h3>Laravel Image Intervention Package</h3>
 
 #
+
+<h4>Installation:</h4>
+
+```js
+composer.phar require intervention/image
+```
