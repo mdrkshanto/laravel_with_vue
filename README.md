@@ -179,4 +179,5 @@ composer.phar require intervention/image
 
 <h5>Configurations:</h5>
 
-<p>Add to <code>config/app.php</code>.</p>
+<p>After you have installed Intervention Image, open your Laravel config file <code>config/app.php</code> and add the following lines.</p>
+<p>In the <code>$providers</code> array add the service providers for this package.</p>
