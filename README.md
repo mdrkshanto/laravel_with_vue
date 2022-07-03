@@ -200,3 +200,24 @@ Intervention\Image\ImageServiceProvider::class,
 ```js
 php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h6>Some Essencial Codes</h6>
+
+```js
+npm run dev
+
+npm run production
+```
